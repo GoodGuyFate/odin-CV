@@ -1,0 +1,138 @@
+.cv {
+  max-width: 680px;
+  font-family: sans-serif;
+  color: #111;
+  padding: 2rem 0;
+}
+
+/* Header */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.cv-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cv-contact {
+  font-size: 13px;
+  color: #333;
+  margin: 0;
+}
+
+/* Dividers */
+.cv-divider-bold {
+  border: none;
+  border-top: 1.5px solid #111;
+  margin: 0 0 1rem;
+}
+
+.cv-divider {
+  border: none;
+  border-top: 1px solid #111;
+  margin: 0.75rem 0 0.75rem;
+}
+
+/* Summary */
+.cv-summary {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 0.75rem;
+}
+
+/* Sections */
+.cv-section {
+  margin-bottom: 0.5rem;
+}
+
+.cv-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+  color: #111;
+}
+
+/* Jobs */
+.cv-job {
+  margin-bottom: 1rem;
+}
+
+.cv-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cv-job-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cv-company {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cv-role-title {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.cv-meta {
+  font-size: 13px;
+  color: #111;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Bullets */
+.cv-bullets {
+  margin: 4px 0 0;
+  padding-left: 1.5rem;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Education */
+.cv-education {
+  margin-bottom: 0.75rem;
+}
+
+.cv-education .cv-job-header {
+  align-items: baseline;
+}
+
+.cv-education .cv-company {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cv-education .cv-meta {
+  font-style: normal;
+}
+
+.cv-education-sub {
+  font-size: 13px;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Skills */
+.cv-skills {
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 13px;
+  line-height: 1.8;
+  columns: 2;
+  gap: 1rem;
+}
