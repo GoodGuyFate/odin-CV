@@ -1,16 +1,20 @@
-# React + Vite
+# CV Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application for creating professional CVs/resumes. Users fill out their information through an interactive form and generate a styled, print-ready CV preview.
+Deployed on Vercel.
+Link: https://odin-cv-ten.vercel.app/
 
-Currently, two official plugins are available:
+Built as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Interactive Form** — Add and edit personal info, work experience, education, and skills
+- **Dynamic Sections** — Add multiple jobs, roles, and bullet points per entry
+- **Live Preview** — Toggle between editing mode and styled CV output
+- **Persistent Data** — Return to edit mode without losing your progress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- CSS
