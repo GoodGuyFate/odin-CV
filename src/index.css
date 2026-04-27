@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap');
 
 :root {
-  --primary: #2563eb;
-  --bg: #ffffff;
+  --primary: #111111;
+  --accent: #2a52be;
+  --bg: #f5f4f0;
   --surface: #ffffff;
-  --text: #1e293b;
-  --border: #e2e8f0;
+  --text: #111111;
+  --text-muted: #666666;
+  --border: #d0cec8;
+  --radius: 4px;
 }
 
 * {
@@ -15,8 +18,9 @@
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
+  min-height: 100vh;
 }

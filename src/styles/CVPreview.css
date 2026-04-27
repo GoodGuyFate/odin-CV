@@ -1,68 +1,113 @@
-.cv {
-  max-width: 680px;
-  font-family: sans-serif;
-  color: #111;
-  padding: 2rem 0;
+/* CV wrapper — centred white page on grey bg */
+.cv-page-wrap {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 2.5rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Header */
+.cv {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  padding: 2.75rem 3rem 3rem;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* ── Back button above page ─── */
+.cv-back-btn {
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.cv-back-btn button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.cv-back-btn button:hover {
+  background: #fff;
+  color: var(--text);
+}
+
+/* ── Header ─────────────────── */
 .cv-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 0.5rem;
+  align-items: flex-end;
+  margin-bottom: 0.6rem;
 }
 
 .cv-name {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
+  letter-spacing: 0.01em;
   margin: 0;
+  font-family: 'EB Garamond', serif;
 }
 
 .cv-contact {
-  font-size: 13px;
+  font-size: 12.5px;
   color: #333;
   margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  text-align: right;
 }
 
-/* Dividers */
+/* ── Dividers ───────────────── */
 .cv-divider-bold {
   border: none;
   border-top: 1.5px solid #111;
-  margin: 0 0 1rem;
+  margin: 0.5rem 0 0.75rem;
 }
 
 .cv-divider {
   border: none;
   border-top: 1px solid #111;
-  margin: 0.75rem 0 0.75rem;
+  margin: 0.75rem 0;
 }
 
-/* Summary */
+/* ── Summary ────────────────── */
 .cv-summary {
   font-size: 13px;
-  line-height: 1.6;
-  margin: 0 0 0.75rem;
+  line-height: 1.7;
+  margin: 0 0 0.25rem;
+  font-family: 'DM Sans', sans-serif;
 }
 
-/* Sections */
+/* ── Section titles ─────────── */
 .cv-section {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .cv-section-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
   text-decoration: underline;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 0.75rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.6rem;
   color: #111;
 }
 
-/* Jobs */
+/* ── Jobs ───────────────────── */
 .cv-job {
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .cv-job-header {
@@ -80,59 +125,139 @@
 .cv-company {
   font-size: 14px;
   font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .cv-role-title {
   font-size: 13px;
   font-style: italic;
+  font-family: 'EB Garamond', serif;
 }
 
 .cv-meta {
   font-size: 13px;
   color: #111;
-  margin: 0;
   font-style: italic;
+  font-family: 'EB Garamond', serif;
 }
 
-/* Bullets */
+/* ── Bullets ────────────────── */
 .cv-bullets {
-  margin: 4px 0 0;
-  padding-left: 1.5rem;
+  margin: 5px 0 0;
+  padding-left: 1.4rem;
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.75;
+  font-family: 'DM Sans', sans-serif;
+  list-style-type: disc;
 }
 
-/* Education */
+.cv-bullets li::marker {
+  color: #111;
+}
+
+/* ── Education ──────────────── */
 .cv-education {
-  margin-bottom: 0.75rem;
-}
-
-.cv-education .cv-job-header {
-  align-items: baseline;
+  margin-bottom: 0.6rem;
 }
 
 .cv-education .cv-company {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .cv-education .cv-meta {
   font-style: normal;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .cv-education-sub {
   font-size: 13px;
   font-style: italic;
-  margin: 0;
+  margin: 1px 0 0;
+  font-family: 'EB Garamond', serif;
 }
 
-/* Skills */
+/* ── Skills ─────────────────── */
 .cv-skills {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.4rem;
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 1.9;
   columns: 2;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  list-style-type: disc;
+}
+
+/* ── Action bar (Back + Download) ── */
+.cv-actions {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cv-actions button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-download {
+  background: #111 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 0.45rem 1.1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em;
+}
+
+.btn-download:hover {
+  background: #333 !important;
+}
+
+/* ── Print styles ─────────────────── */
+@media print {
+  @page {
+    margin: 1.5cm 1.8cm;
+    size: A4;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .cv-page-wrap {
+    background: #fff !important;
+    padding: 0 !important;
+    display: block;
+  }
+
+  .cv {
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Prevent awkward breaks */
+  .cv-job,
+  .cv-education {
+    break-inside: avoid;
+  }
+
+  .cv-section-title {
+    break-after: avoid;
+  }
 }

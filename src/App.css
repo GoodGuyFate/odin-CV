@@ -1,0 +1,191 @@
+/* ── Layout ─────────────────────────────────────── */
+#root {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* ── Form sections (fieldsets) ──────────────────── */
+.form-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1.5rem 1.75rem 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-section legend {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--primary);
+  padding: 0 0.5rem;
+}
+
+/* ── Labels ─────────────────────────────────────── */
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+/* ── Inputs & Textareas ─────────────────────────── */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(42, 82, 190, 0.1);
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* ── Job / Education / Skill entries ────────────── */
+.job-entry,
+.edu-entry {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1rem;
+}
+
+.job-entry input:first-child,
+.edu-entry input:first-child {
+  grid-column: 1 / 2;
+}
+
+.job-entry > button,
+.edu-entry > button {
+  grid-column: 1 / -1;
+}
+
+.role-entry {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.75rem;
+}
+
+.bullet-entry {
+  grid-column: 1 / -1;
+}
+
+.skill-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-entry input {
+  flex: 1;
+}
+
+/* ── Buttons ─────────────────────────────────────── */
+button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.15s;
+  background: var(--surface);
+  color: var(--text);
+}
+
+button:hover {
+  border-color: #999;
+  background: var(--bg);
+}
+
+/* Add buttons */
+button[type="button"]:last-of-type:not(.delete-btn) {
+  color: var(--accent);
+  border-color: rgba(42, 82, 190, 0.3);
+}
+
+button[type="button"]:last-of-type:not(.delete-btn):hover {
+  background: rgba(42, 82, 190, 0.06);
+  border-color: var(--accent);
+}
+
+/* Delete buttons */
+button[type="button"]:only-of-type,
+.edu-entry button,
+.skill-entry button {
+  background: transparent;
+  border-color: #e0b0b0;
+  color: #c0392b;
+  font-size: 0.78rem;
+
+}
+
+button[type="button"]:only-of-type:hover,
+.edu-entry button:hover,
+.skill-entry button:hover {
+  background: #fff0f0;
+  border-color: #c0392b;
+}
+
+/* ── Spacing: Add buttons below entries ─────────── */
+.form-section > button[type="button"]:last-child {
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Primary CTA */
+button.cta,
+#root > button {
+  display: block;
+  margin: 1.5rem auto 0;
+  padding: 0.7rem 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+}
+
+#root > button:hover {
+  background: #333;
+  border: none;
+}
